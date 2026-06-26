@@ -818,6 +818,7 @@ p{color:var(--text-secondary);line-height:1.7;font-weight:500}
   .nav-toggle{display:flex}
   .hero{padding:100px 20px 60px;min-height:90vh}
   .hero h1{font-size:clamp(32px,8vw,48px)}
+  .hero h1 br,.about-v2-hero-main h1 br,.positioning-grid h2 br{display:none}
   .hero p{font-size:15px;margin-bottom:32px}
   .hero-actions{flex-direction:column;align-items:stretch}
   .hero-actions .btn{justify-content:center}
@@ -854,9 +855,11 @@ p{color:var(--text-secondary);line-height:1.7;font-weight:500}
   .product-intro-grid{grid-template-columns:1fr;gap:24px}
   .product-intro-grid h2{font-size:clamp(26px,8vw,36px)}
   .product-section{padding:80px 0}
-  .dashboard-body{grid-template-columns:1fr}
-  .dashboard-main{border-right:none;border-bottom:1px solid var(--border)}
-  .dashboard-sidebar{padding:20px}
+  .detail-visual{display:block;width:100%}
+  .detail-visual .dashboard-mockup{width:100%;max-width:none}
+  .dashboard-body{grid-template-columns:1fr;width:100%}
+  .dashboard-main{border-right:none;border-bottom:1px solid var(--border);width:100%;min-width:0}
+  .dashboard-sidebar{padding:20px;width:100%;min-width:0}
   .twin-layout{grid-template-columns:1fr}
   .twin-view{border-right:none;border-bottom:1px solid var(--border)}
   .twin-legend{padding:20px}
