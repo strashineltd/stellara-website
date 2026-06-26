@@ -116,8 +116,9 @@ p{color:var(--text-secondary);line-height:1.7;font-weight:500}
 .nav-mobile-lang .lang-option.lang-active{border-color:var(--text)}
 
 /* Mobile nav */
-.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none}
-.nav-toggle span{display:block;width:22px;height:1.5px;background:var(--text);transition:transform 0.3s ease,opacity 0.3s ease}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:12px;background:rgba(255,255,255,0.02);border:1px solid var(--border-hover);border-radius:4px;transition:border-color 0.3s ease,background 0.3s ease}
+.nav-toggle:hover,.nav-toggle:focus{border-color:var(--text);background:rgba(255,255,255,0.06)}
+.nav-toggle span{display:block;width:26px;height:2px;background:var(--text);transition:transform 0.3s ease,opacity 0.3s ease}
 .nav-mobile{position:fixed;inset:0;background:rgba(0,0,0,0.95);backdrop-filter:blur(30px);-webkit-backdrop-filter:blur(30px);z-index:2000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:32px;opacity:0;visibility:hidden;transition:opacity 0.35s ease,visibility 0.35s ease}
 .nav-mobile.active{opacity:1;visibility:visible}
 .nav-mobile a{font-size:24px;font-weight:600;color:var(--text);letter-spacing:0.02em;transition:opacity 0.3s ease}
