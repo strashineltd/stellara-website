@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STELLARA 产品 — AI视觉、Agent自主决策、多机器人协同、数字孪生与云边协同">
+    <title data-i18n="page.products.title">产品 — 星瀚空间 STELLARA</title>
+    <link rel="stylesheet" href="css/spacex.css?v=2">
+</head>
+<body>
+
+<nav class="nav">
+    <a href="index.html" class="nav-logo">
+        <img src="微信图片_20260413204202_1_2.jpg" alt="星瀚空间" width="32" height="32">
+        星瀚空间
+    </a>
+    <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">首页</a></li>
+        <li><a href="products.html" class="active" data-i18n="nav.products">产品</a></li>
+        <li><a href="services.html" data-i18n="nav.services">场景</a></li>
+        <li><a href="about.html" data-i18n="nav.about">关于</a></li>
+    </ul>
+    <div class="nav-lang" id="lang-switcher"></div>
+    <a href="services.html#contact" class="nav-cta" data-i18n="nav.cta">联系我们</a>
+    <button class="nav-toggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+    </button>
+</nav>
+
+<div class="nav-mobile">
+    <button class="nav-mobile-close">&times;</button>
+    <a href="index.html" data-i18n="nav.home">首页</a>
+    <a href="products.html" data-i18n="nav.products">产品</a>
+    <a href="services.html" data-i18n="nav.services">场景</a>
+    <a href="about.html" data-i18n="nav.about">关于</a>
+    <a href="services.html#contact" data-i18n="nav.cta">联系我们</a>
+    <div id="lang-switcher-mobile"></div>
+</div>
+
+<section class="page-header">
+    <h1 class="fade-in" data-i18n="page.products.title">产品</h1>
+    <p class="fade-in" data-i18n="page.products.desc">AI视觉 × Agent自主决策 × 智能巡检机器人，构建新一代自主智能巡检平台。</p>
+    <div class="breadcrumb fade-in">
+        <a href="index.html" data-i18n="breadcrumb.home">首页</a><span>/</span><span data-i18n="page.products.breadcrumb">产品</span>
+    </div>
+</section>
+
+<section class="product-section" id="ai-vision">
+    <div class="container">
+        <div class="detail-grid fade-in">
+            <div class="detail-info">
+                <div class="product-badge" data-i18n="products.cap1.label">核心能力 01</div>
+                <h2 data-i18n="products.cap1.name">AI视觉识别</h2>
+                <p data-i18n="products.cap1.desc">机器人拥有类似人类的视觉理解能力。通过RGB视觉、红外热成像、激光雷达三维感知、深度视觉建模与多摄像头融合感知，让机器人不仅“看见”，更能“理解”。</p>
+                <div class="detail-features">
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◉</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap1.f1t">多模态感知</strong>
+                            <span data-i18n="products.cap1.f1d">RGB、红外、激光雷达、深度视觉融合，构建全天候感知能力。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◉</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap1.f2t">工业级识别</strong>
+                            <span data-i18n="products.cap1.f2d">人员、车辆、工业设备、仪表状态、管线、火焰、烟雾、漏液、腐蚀、异常温升、裂纹、外观缺陷。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◉</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap1.f3t">三维空间理解</strong>
+                            <span data-i18n="products.cap1.f3d">基于激光雷达与深度视觉的三维建模，实现精准定位与语义理解。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-visual">
+                <div class="terminal-header">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">AI Vision Engine</span>
+                </div>
+                <span class="prompt">&gt; detect(targets=["person","vehicle","equipment","fire","smoke"])</span>
+                <div class="output">[<br>&nbsp;&nbsp;{id: 1, class: "person", confidence: 0.98, bbox: [120,80,220,320]},<br>&nbsp;&nbsp;{id: 2, class: "equipment", status: "normal", temp: "42°C"},<br>&nbsp;&nbsp;{id: 3, class: "anomaly", type: "overheating", risk: "medium"}<br>]</div>
+                <span class="prompt">&gt; analyze(thermal=true, depth=true)</span>
+                <div class="output">thermal_alert: zone_3_temp_rising<br>depth_map: updated<br>action: dispatch_agent_to_verify</div>
+                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-section alt" id="agent">
+    <div class="container">
+        <div class="detail-grid fade-in">
+            <div class="detail-info">
+                <div class="product-badge" data-i18n="products.cap2.label">核心能力 02</div>
+                <h2 data-i18n="products.cap2.name">Agent自主决策</h2>
+                <p data-i18n="products.cap2.desc">传统机器人发现异常后只能报警等待人工处理。STELLARA的Agent具备持续学习与自主决策能力，能够理解异常、分析原因、评估风险、生成方案并自主执行，形成完整闭环。</p>
+                <div class="detail-features">
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◈</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap2.f1t">从发现到执行</strong>
+                            <span data-i18n="products.cap2.f1d">发现异常 → 理解异常 → 分析原因 → 风险评估 → 生成方案 → 自主执行 → 形成闭环。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◈</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap2.f2t">持续学习</strong>
+                            <span data-i18n="products.cap2.f2d">每一次巡检都会提升下一次决策能力，模型随数据不断进化。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◈</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap2.f3t">可解释决策</strong>
+                            <span data-i18n="products.cap2.f3d">每个决策都有清晰的推理路径与风险评估依据，便于人工审计。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-visual">
+                <div class="terminal-header">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">Agent Decision Loop</span>
+                </div>
+                <span class="prompt">&gt; event: anomaly_detected(zone=7, type=overheating)</span>
+                <div class="output">reasoning:<br>&nbsp;&nbsp;- historical_temp_trend: rising 12°C/hour<br>&nbsp;&nbsp;- similar_cases: 3 resolved by vent_reset<br>&nbsp;&nbsp;- risk_level: medium<br>decision: dispatch nearest robot to verify<br>action_plan: [navigate, capture, report, alert if confirmed]</div>
+                <span class="prompt">&gt; execute(action_plan)</span>
+                <div class="output">status: dispatched<br>eta: 2m 14s<br>feedback_loop: active</div>
+                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-section" id="multi-robot">
+    <div class="container">
+        <div class="detail-grid fade-in">
+            <div class="detail-info">
+                <div class="product-badge" data-i18n="products.cap3.label">核心能力 03</div>
+                <h2 data-i18n="products.cap3.name">多机器人协同</h2>
+                <p data-i18n="products.cap3.desc">支持机器人集群协同巡检、任务自动分配、路径动态规划、跨区域协作与异常联合处理。一座园区，一套平台，数百台机器人统一管理。</p>
+                <div class="detail-features">
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">✦</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap3.f1t">集群协同</strong>
+                            <span data-i18n="products.cap3.f1d">四足、轮式、无人机、机械臂等多类型机器人统一调度。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">✦</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap3.f2t">动态规划</strong>
+                            <span data-i18n="products.cap3.f2d">任务自动分配、路径动态规划、跨区域协作、异常联合处理。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">✦</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap3.f3t">统一管控</strong>
+                            <span data-i18n="products.cap3.f3d">一套平台统一管理数百台机器人，实时掌握全园区巡检状态。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-visual">
+                <div class="terminal-header">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">Fleet Orchestration</span>
+                </div>
+                <span class="prompt">&gt; fleet.status()</span>
+                <div class="output">online_robots: 47/50<br>active_missions: 12<br>zone_coverage: 98.7%<br>avg_response: 1m 8s</div>
+                <span class="prompt">&gt; fleet.dispatch(zone=3, priority=high)</span>
+                <div class="output">selected: robot_12 (distance 180m, battery 82%)<br>backup: robot_07<br>route_optimized: saved 34s</div>
+                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-section alt" id="digital-twin">
+    <div class="container">
+        <div class="detail-grid fade-in">
+            <div class="detail-info">
+                <div class="product-badge" data-i18n="products.cap4.label">核心能力 04</div>
+                <h2 data-i18n="products.cap4.name">数字孪生平台</h2>
+                <p data-i18n="products.cap4.desc">建立真实世界的数字映射，实时同步设备状态、机器人位置、环境信息、历史数据、巡检轨迹与风险分布，帮助管理人员实时掌握整个园区运行状态。</p>
+                <div class="detail-features">
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◐</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap4.f1t">实时同步</strong>
+                            <span data-i18n="products.cap4.f1d">设备状态、机器人位置、环境信息、历史数据实时映射。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◐</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap4.f2t">风险可视化</strong>
+                            <span data-i18n="products.cap4.f2d">巡检轨迹、风险分布、异常热力图一目了然。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">◐</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap4.f3t">决策支持</strong>
+                            <span data-i18n="products.cap4.f3d">基于历史数据与实时状态，为管理决策提供数据支撑。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-visual">
+                <div class="terminal-header">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">Digital Twin</span>
+                </div>
+                <span class="prompt">&gt; twin.sync()</span>
+                <div class="output">assets_synced: 1,247<br>robots_synced: 47<br>alerts_active: 3<br>risk_zones: [zone_3, zone_7, zone_11]</div>
+                <span class="prompt">&gt; twin.render(mode="risk_heatmap")</span>
+                <div class="output">heatmap: generated<br>historical_trend: 7d loaded<br>predictive_alerts: 2</div>
+                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="product-section" id="edge-cloud">
+    <div class="container">
+        <div class="detail-grid fade-in">
+            <div class="detail-info">
+                <div class="product-badge" data-i18n="products.cap5.label">核心能力 05</div>
+                <h2 data-i18n="products.cap5.name">云边协同</h2>
+                <p data-i18n="products.cap5.desc">支持边缘AI推理、云端模型训练、本地私有化部署、混合云部署、低延迟决策与离线运行，适用于涉密园区、工业现场与商业航天基地。</p>
+                <div class="detail-features">
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">☁</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap5.f1t">边缘推理</strong>
+                            <span data-i18n="products.cap5.f1d">本地化低延迟AI推理，保障实时性与数据隐私。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">☁</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap5.f2t">云端训练</strong>
+                            <span data-i18n="products.cap5.f2d">云端持续训练与模型迭代，统一分发至边缘端。</span>
+                        </div>
+                    </div>
+                    <div class="detail-feature">
+                        <div class="detail-feature-icon">☁</div>
+                        <div class="detail-feature-text">
+                            <strong data-i18n="products.cap5.f3t">灵活部署</strong>
+                            <span data-i18n="products.cap5.f3d">私有化、混合云、离线运行，满足涉密与工业现场要求。</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="detail-visual">
+                <div class="terminal-header">
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-dot"></span>
+                    <span class="terminal-title">Edge-Cloud Sync</span>
+                </div>
+                <span class="prompt">&gt; edge.infer(image, model="anomaly_v3")</span>
+                <div class="output">latency: 23ms<br>confidence: 0.96<br>result: normal</div>
+                <span class="prompt">&gt; cloud.train(dataset="facility_a_q2")</span>
+                <div class="output">model: anomaly_v4<br>accuracy: +2.3%<br>deployed_to: 12 edge_nodes</div>
+                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section advantages-section">
+    <div class="container">
+        <div class="section-header section-header--center fade-in">
+            <span class="section-label" data-i18n="products.adv.section">产品优势</span>
+            <h2 class="section-title" data-i18n="products.adv.heading">为什么选择 STELLARA</h2>
+            <p class="section-desc" data-i18n="products.adv.desc">不只是替代人工，更是为企业构建可持续演进的自主智能巡检能力。</p>
+        </div>
+        <div class="feature-grid fade-in">
+            <article class="feature-item">
+                <div class="feature-item-glow"></div>
+                <div class="feature-item-icon" aria-hidden="true">◐</div>
+                <h4 data-i18n="products.adv.f1t">全天候自主运行</h4>
+                <p data-i18n="products.adv.f1d">7×24小时连续工作，无需人工值守，夜间、雨雪、高温、高危环境均可稳定运行。</p>
+            </article>
+            <article class="feature-item">
+                <div class="feature-item-glow"></div>
+                <div class="feature-item-icon" aria-hidden="true">◉</div>
+                <h4 data-i18n="products.adv.f2t">AI主动发现问题</h4>
+                <p data-i18n="products.adv.f2d">不仅能识别异常，更能理解异常、主动分析风险、提前预警，实现预测性巡检。</p>
+            </article>
+            <article class="feature-item">
+                <div class="feature-item-glow"></div>
+                <div class="feature-item-icon" aria-hidden="true">◈</div>
+                <h4 data-i18n="products.adv.f3t">自主执行任务</h4>
+                <p data-i18n="products.adv.f3d">自主导航、避障、充电、返回、巡检、生成报告，无需人工干预。</p>
+            </article>
+            <article class="feature-item">
+                <div class="feature-item-glow"></div>
+                <div class="feature-item-icon" aria-hidden="true">∞</div>
+                <h4 data-i18n="products.adv.f4t">持续学习</h4>
+                <p data-i18n="products.adv.f4d">AI模型持续优化，行业知识不断积累，机器人越巡检越智能。</p>
+            </article>
+            <article class="feature-item">
+                <div class="feature-item-glow"></div>
+                <div class="feature-item-icon" aria-hidden="true">✦</div>
+                <h4 data-i18n="products.adv.f5t">多场景适配</h4>
+                <p data-i18n="products.adv.f5d">支持四足机器人、轮式机器人、无人机、机械臂、固定摄像头及更多自主智能设备统一接入。</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section architecture-section">
+    <div class="container">
+        <div class="section-header section-header--center fade-in">
+            <span class="section-label" data-i18n="products.arch.section">技术架构</span>
+            <h2 class="section-title" data-i18n="products.arch.heading">从AI大模型到机器人本体</h2>
+            <p class="section-desc" data-i18n="products.arch.desc">分层解耦的架构设计，让智能决策、视觉感知、数字孪生与机器人控制深度融合。</p>
+        </div>
+        <div class="architecture-diagram fade-in">
+            <div class="arch-layer">
+                <div class="arch-node arch-node--ai" data-i18n="products.arch.l1">AI大模型</div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+                <div class="arch-node" data-i18n="products.arch.l2">Agent自主智能</div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+                <div class="arch-node" data-i18n="products.arch.l3">AI视觉分析</div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+                <div class="arch-node" data-i18n="products.arch.l4">数字孪生平台</div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer">
+                <div class="arch-node" data-i18n="products.arch.l5">机器人控制系统</div>
+            </div>
+            <div class="arch-connector"></div>
+            <div class="arch-layer arch-layer--devices">
+                <div class="arch-device" data-i18n="products.arch.d1">四足机器人</div>
+                <div class="arch-device" data-i18n="products.arch.d2">轮式机器人</div>
+                <div class="arch-device" data-i18n="products.arch.d3">无人机</div>
+                <div class="arch-device" data-i18n="products.arch.d4">机械臂</div>
+                <div class="arch-device" data-i18n="products.arch.d5">固定摄像头</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta product-cta">
+    <div class="container">
+        <h2 class="fade-in" data-i18n="cta2.heading">找到适合您的方案</h2>
+        <p class="fade-in" data-i18n="cta2.desc">无论您是商业航天基地、工业制造现场还是智慧园区，我们都能提供定制化的自主智能巡检方案。</p>
+        <div class="cta-actions fade-in">
+            <a href="services.html#contact" class="btn btn--primary btn--lg" data-i18n="cta2.btn">和我们聊聊</a>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-brand">
+                <img src="微信图片_20260413204202_1_2.jpg" alt="星瀚空间" width="24" height="24" loading="lazy">
+                星瀚空间
+            </a>
+            <div class="footer-links">
+                <a href="products.html" data-i18n="footer.products">产品</a>
+                <a href="services.html" data-i18n="footer.services">场景</a>
+                <a href="about.html" data-i18n="footer.about">关于</a>
+                <a href="mailto:stbotwr@outlook.com" data-i18n="footer.contact">联系</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span class="footer-copy" data-i18n="footer.copy">© 2026 星瀚空间 STELLARA</span>
+            <div class="footer-social">
+                <a href="https://space.bilibili.com/3546841601804438" target="_blank" rel="noopener noreferrer">Bilibili</a>
+                <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank" rel="noopener noreferrer">抖音</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="back-to-top">&uarr;</div>
+
+<script src="js/config.js"></script>
+<script src="js/i18n.js?v=4"></script>
+<script src="js/spacex.js?v=2"></script>
+</body>
+</html>

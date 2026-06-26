@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv/
+venv/
+
+# Backend / data
+server.py
+start.py
+requirements.txt
+data/
+
+# Documents
+*.docx
+
+# Misc
+nul
