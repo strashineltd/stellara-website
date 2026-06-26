@@ -45,22 +45,41 @@
             <p class="about-v2-hero-lead" data-i18n="about.p1">STELLARA（星瀚空间）致力于构建连接AI、机器人与真实世界的新一代自主智能平台，让每一台机器人都成为具备感知、思考与执行能力的智能体。</p>
             <a href="#belief" class="btn btn--primary" data-i18n="hero.btn1">了解我们</a>
         </div>
-        <div class="about-v2-hero-stats fade-in">
-            <div class="about-v2-hero-stat">
-                <div class="about-v2-stat-num" data-final="5+">5+</div>
-                <div class="about-v2-hero-stat-label" data-i18n="about.stat1">核心能力</div>
-            </div>
-            <div class="about-v2-hero-stat">
-                <div class="about-v2-stat-num" data-final="5+">5+</div>
-                <div class="about-v2-hero-stat-label" data-i18n="about.stat2">应用场景</div>
-            </div>
-            <div class="about-v2-hero-stat">
-                <div class="about-v2-stat-num" data-final="7×24">7×24</div>
-                <div class="about-v2-hero-stat-label" data-i18n="about.stat3">自主运行</div>
-            </div>
-            <div class="about-v2-hero-stat">
-                <div class="about-v2-stat-num" data-final="100%">100%</div>
-                <div class="about-v2-hero-stat-label" data-i18n="about.v2.stat.team">自主闭环</div>
+        <div class="about-v2-hero-visual fade-in">
+            <div class="about-status-card">
+                <div class="about-status-header">
+                    <span class="about-status-dot live"></span>
+                    <span class="about-status-title" data-i18n="about.status.title">平台运行状态</span>
+                </div>
+                <div class="about-status-body">
+                    <div class="about-status-main">
+                        <div class="about-status-orb">
+                            <div class="about-status-orb-ring"></div>
+                            <div class="about-status-orb-core">
+                                <span class="about-status-orb-value">AI</span>
+                                <span class="about-status-orb-label" data-i18n="about.status.orb">自主巡检</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-status-metrics">
+                        <div class="about-status-metric">
+                            <span class="about-status-metric-value">5+</span>
+                            <span class="about-status-metric-label" data-i18n="about.stat1">核心能力</span>
+                        </div>
+                        <div class="about-status-metric">
+                            <span class="about-status-metric-value">5+</span>
+                            <span class="about-status-metric-label" data-i18n="about.stat2">应用场景</span>
+                        </div>
+                        <div class="about-status-metric">
+                            <span class="about-status-metric-value">7×24</span>
+                            <span class="about-status-metric-label" data-i18n="about.stat3">自主运行</span>
+                        </div>
+                        <div class="about-status-metric">
+                            <span class="about-status-metric-value">100%</span>
+                            <span class="about-status-metric-label" data-i18n="about.v2.stat.team">自主闭环</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -75,11 +94,26 @@
 
 <section class="section belief-section" id="belief">
     <div class="container">
-        <div class="belief-content fade-in">
-            <span class="section-label" data-i18n="belief.section">品牌理念</span>
-            <h2 data-i18n="belief.heading">重新定义智能巡检</h2>
-            <p data-i18n="belief.p1">我们相信，未来的机器人不仅能够移动，更能够理解环境、分析问题、自主决策，并持续学习。</p>
-            <p data-i18n="belief.p2">STELLARA致力于构建连接AI、机器人与真实世界的新一代自主智能平台，让每一台机器人都成为具备感知、思考与执行能力的智能体。</p>
+        <div class="belief-grid fade-in">
+            <div class="belief-content">
+                <span class="section-label" data-i18n="belief.section">品牌理念</span>
+                <h2 data-i18n="belief.heading">重新定义智能巡检</h2>
+                <p data-i18n="belief.p1">我们相信，未来的机器人不仅能够移动，更能够理解环境、分析问题、自主决策，并持续学习。</p>
+                <p data-i18n="belief.p2">STELLARA致力于构建连接AI、机器人与真实世界的新一代自主智能平台，让每一台机器人都成为具备感知、思考与执行能力的智能体。</p>
+            </div>
+            <div class="belief-visual">
+                <div class="belief-cycle">
+                    <div class="belief-cycle-ring"></div>
+                    <div class="belief-cycle-ring"></div>
+                    <div class="belief-cycle-ring"></div>
+                    <div class="belief-cycle-center">
+                        <span class="belief-cycle-core" data-i18n="belief.core">智能体</span>
+                    </div>
+                    <div class="belief-cycle-node" data-i18n="belief.node1">感知</div>
+                    <div class="belief-cycle-node" data-i18n="belief.node2">思考</div>
+                    <div class="belief-cycle-node" data-i18n="belief.node3">执行</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -132,39 +166,32 @@
 <section class="about-v2-connect" id="contact">
     <div class="container">
         <div class="about-v2-connect-head fade-in">
+            <span class="section-label" data-i18n="about.v2.connect.label">联系</span>
             <h2 data-i18n="about.v2.connect.heading">保持联系</h2>
             <p data-i18n="about.v2.connect.desc">无论您有什么想法或需求，都欢迎随时联系我们。</p>
         </div>
-        <div class="about-v2-connect-grid fade-in">
-            <a href="https://space.bilibili.com/3546841601804438" target="_blank" rel="noopener noreferrer" class="about-v2-connect-card">
-                <div class="about-v2-connect-card-left">
-                    <div class="about-v2-connect-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/></svg>
-                    </div>
-                    <div>
-                        <h4>Bilibili</h4>
-                        <p data-i18n="about.social.bili.desc">产品演示 · 技术分享 · 行业洞察</p>
-                    </div>
+        <div class="connect-grid fade-in">
+            <a href="https://space.bilibili.com/3546841601804438" target="_blank" rel="noopener noreferrer" class="connect-card">
+                <div class="connect-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c-.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373zm8 0c.373 0 .684.124.933.373.25.249.383.569.4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.373.933-.373z"/></svg>
                 </div>
-                <span class="about-v2-connect-arrow">&rarr;</span>
+                <h4>Bilibili</h4>
+                <p data-i18n="about.social.bili.desc">产品演示 · 技术分享 · 行业洞察</p>
+                <span class="connect-arrow">&rarr;</span>
             </a>
-            <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank" rel="noopener noreferrer" class="about-v2-connect-card">
-                <div class="about-v2-connect-card-left">
-                    <div class="about-v2-connect-icon">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.16z"/></svg>
-                    </div>
-                    <div>
-                        <h4>抖音</h4>
-                        <p data-i18n="about.social.douyin.desc">日常分享 · 产品动态 · 团队故事</p>
-                    </div>
+            <a href="https://www.douyin.com/user/self?from_tab_name=main" target="_blank" rel="noopener noreferrer" class="connect-card">
+                <div class="connect-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3.15 15.2a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.73a8.19 8.19 0 0 0 4.76 1.52v-3.4a4.85 4.85 0 0 1-1-.16z"/></svg>
                 </div>
-                <span class="about-v2-connect-arrow">&rarr;</span>
+                <h4>抖音</h4>
+                <p data-i18n="about.social.douyin.desc">日常分享 · 产品动态 · 团队故事</p>
+                <span class="connect-arrow">&rarr;</span>
             </a>
-        </div>
-        <div class="about-v2-connect-email fade-in">
-            <a href="mailto:stbotwr@outlook.com">
-                stbotwr@outlook.com
-                <span>&rarr;</span>
+            <a href="mailto:stbotwr@outlook.com" class="connect-card">
+                <div class="connect-icon">@</div>
+                <h4 data-i18n="about.v2.connect.email">邮件</h4>
+                <p data-i18n="about.v2.connect.email.desc">stbotwr@outlook.com</p>
+                <span class="connect-arrow">&rarr;</span>
             </a>
         </div>
     </div>
@@ -197,7 +224,7 @@
 <div class="back-to-top">&uarr;</div>
 
 <script src="js/config.js"></script>
-<script src="js/i18n.js?v=5"></script>
+<script src="js/i18n.js?v=6"></script>
 <script src="js/spacex.js?v=5"></script>
 <script>
 (function(){
