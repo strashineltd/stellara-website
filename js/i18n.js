@@ -120,6 +120,7 @@
         'products.hero.metric1':'全天候运行',
         'products.hero.metric2':'边缘推理延迟',
         'products.hero.metric3':'识别目标类型',
+        'products.hero.orb':'自主巡检',
         'products.intro.label':'产品定位',
         'products.intro.heading':'不只是机器人，更是自主智能平台。',
         'products.intro.p1':'STELLARA 不是传统巡检机器人。它是一套融合 AI 视觉、自主 Agent、机器人控制、多机器人协同和数字孪生的平台。机器人只是执行者，真正的大脑是 AI。',

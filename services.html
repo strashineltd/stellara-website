@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="STELLARA 应用场景 — 商业航天、工业制造、能源、智慧园区、基础设施">
     <title data-i18n="page.services.title">场景 — 星瀚空间 STELLARA</title>
-    <link rel="stylesheet" href="css/spacex.css?v=2">
+    <link rel="stylesheet" href="css/spacex.css?v=5">
 </head>
 <body>
 
@@ -76,18 +76,36 @@
                     </div>
                 </div>
             </div>
-            <div class="detail-visual">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">Spaceport Inspection</span>
+            <div class="detail-visual dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">发射场巡检台</div>
+                    <div class="dashboard-status"><span class="status-dot live"></span>任务就绪</div>
                 </div>
-                <span class="prompt">&gt; mission: launchpad_tower_check</span>
-                <div class="output">coverage: 100%<br>anomalies: 0<br>fuel_line_temp: nominal<br>status: ready_for_launch</div>
-                <span class="prompt">&gt; report(status)</span>
-                <div class="output">generated: launchpad_inspection_report.pdf<br>signed_off: auto<br>retention: 7 years</div>
-                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+                <div class="dashboard-body">
+                    <div class="dashboard-main">
+                        <div class="camera-view">
+                            <div class="bbox bbox-equipment" data-label="塔架结构" style="top:22%;left:18%;width:120px;height:70px"></div>
+                            <div class="bbox bbox-anomaly" data-label="燃料管线" style="top:52%;left:55%;width:80px;height:40px"></div>
+                            <div class="camera-label">发射塔架 - 塔架 Camera 01</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-title">任务状态</div>
+                        <div class="detection-list">
+                            <div class="detection-item"><span class="detection-tag">塔架覆盖</span><span class="detection-confidence">100%</span></div>
+                            <div class="detection-item"><span class="detection-tag">异常</span><span class="detection-confidence">0</span></div>
+                            <div class="detection-item"><span class="detection-tag">燃料温度</span><span class="detection-confidence">正常</span></div>
+                        </div>
+                        <div class="dashboard-alert">
+                            <strong>发射前检查</strong>
+                            <span>所有巡检项通过，报告已自动生成并归档。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span>下次发射 <strong>T-04:32:18</strong></span>
+                    <span>报告归档 <strong>7 年</strong></span>
+                </div>
             </div>
         </div>
     </div>
@@ -124,18 +142,36 @@
                     </div>
                 </div>
             </div>
-            <div class="detail-visual">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">Factory Floor Patrol</span>
+            <div class="detail-visual dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">生产线巡检台</div>
+                    <div class="dashboard-status"><span class="status-dot live"></span>产线运行中</div>
                 </div>
-                <span class="prompt">&gt; patrol.line(assembly_line_a)</span>
-                <div class="output">stations_checked: 24<br>defects_found: 2<br>predictive_alert: conveyor_bearing_wear<br>recommended_action: schedule_maintenance</div>
-                <span class="prompt">&gt; maintenance.confirm(alert_id)</span>
-                <div class="output">work_order: created<br>priority: medium<br>assigned_to: team_b</div>
-                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+                <div class="dashboard-body">
+                    <div class="dashboard-main">
+                        <div class="camera-view">
+                            <div class="bbox bbox-equipment" data-label="传送带" style="top:30%;left:20%;width:140px;height:45px"></div>
+                            <div class="bbox bbox-anomaly" data-label="轴承磨损" style="top:55%;left:58%;width:70px;height:55px"></div>
+                            <div class="camera-label">装配线 A - Line Camera 03</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-title">巡检统计</div>
+                        <div class="detection-list">
+                            <div class="detection-item"><span class="detection-tag">工位检查</span><span class="detection-confidence">24/24</span></div>
+                            <div class="detection-item"><span class="detection-tag">缺陷发现</span><span class="detection-confidence">2</span></div>
+                            <div class="detection-item"><span class="detection-tag">预测告警</span><span class="detection-confidence">轴承磨损</span></div>
+                        </div>
+                        <div class="dashboard-alert warn">
+                            <strong>维护工单</strong>
+                            <span>传送带轴承磨损预测，已自动派发 Team B 处理。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span>优先级 <strong>中等</strong></span>
+                    <span>派单人 <strong>Team B</strong></span>
+                </div>
             </div>
         </div>
     </div>
@@ -172,18 +208,36 @@
                     </div>
                 </div>
             </div>
-            <div class="detail-visual">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">Energy Site Patrol</span>
+            <div class="detail-visual dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">光伏电站巡检台</div>
+                    <div class="dashboard-status"><span class="status-dot live"></span>无人机在线</div>
                 </div>
-                <span class="prompt">&gt; inspect(solar_farm, thermal=true)</span>
-                <div class="output">panels_scanned: 12,480<br>hotspots: 7<br>efficiency_impact: 0.3%<br>cleaning_required: section_d</div>
-                <span class="prompt">&gt; grid.alert(dispatch=cleaning_drone)</span>
-                <div class="output">drone_dispatched: d03<br>eta: 8m<br>estimated_restore: +0.3%</div>
-                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+                <div class="dashboard-body">
+                    <div class="dashboard-main">
+                        <div class="camera-view">
+                            <div class="bbox bbox-equipment" data-label="光伏阵列" style="top:25%;left:15%;width:160px;height:60px"></div>
+                            <div class="bbox bbox-anomaly" data-label="热斑 x7" style="top:50%;left:55%;width:90px;height:70px"></div>
+                            <div class="camera-label">D-03 无人机红外视角</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-title">巡检统计</div>
+                        <div class="detection-list">
+                            <div class="detection-item"><span class="detection-tag">扫描组件</span><span class="detection-confidence">12,480</span></div>
+                            <div class="detection-item"><span class="detection-tag">热斑</span><span class="detection-confidence">7</span></div>
+                            <div class="detection-item"><span class="detection-tag">效率影响</span><span class="detection-confidence">0.3%</span></div>
+                        </div>
+                        <div class="dashboard-alert warn">
+                            <strong>清洗派遣</strong>
+                            <span>无人机 D-03 已前往 D 区，预计 8 分钟恢复效率。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span>预计恢复 <strong>+0.3%</strong></span>
+                    <span>下次巡检 <strong>06:00</strong></span>
+                </div>
             </div>
         </div>
     </div>
@@ -220,18 +274,36 @@
                     </div>
                 </div>
             </div>
-            <div class="detail-visual">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">Smart Campus Patrol</span>
+            <div class="detail-visual dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">园区安防巡检台</div>
+                    <div class="dashboard-status"><span class="status-dot live"></span>夜班巡更中</div>
                 </div>
-                <span class="prompt">&gt; patrol.campus(night_shift)</span>
-                <div class="output">checkpoints: 36<br>incidents: 1 (unauthorized_vehicle)<br>fire_exits: clear<br>parking_level_b: normal</div>
-                <span class="prompt">&gt; security.notify(incident_id)</span>
-                <div class="output">alert_sent: security_center<br>image_evidence: attached<br>response_time: 45s</div>
-                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+                <div class="dashboard-body">
+                    <div class="dashboard-main">
+                        <div class="camera-view">
+                            <div class="bbox bbox-person" data-label="未授权车辆" style="top:35%;left:25%;width:90px;height:60px"></div>
+                            <div class="bbox bbox-equipment" data-label="消防通道" style="top:60%;left:55%;width:110px;height:45px"></div>
+                            <div class="camera-label">北门岗 - 巡逻 Camera 02</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-title">巡更状态</div>
+                        <div class="detection-list">
+                            <div class="detection-item"><span class="detection-tag">巡更点</span><span class="detection-confidence">36/36</span></div>
+                            <div class="detection-item"><span class="detection-tag">异常事件</span><span class="detection-confidence">1</span></div>
+                            <div class="detection-item"><span class="detection-tag">消防通道</span><span class="detection-confidence">畅通</span></div>
+                        </div>
+                        <div class="dashboard-alert">
+                            <strong>事件上报</strong>
+                            <span>未授权车辆已抓拍并通知安保中心，响应时间 45 秒。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span>响应时间 <strong>45s</strong></span>
+                    <span>证据 <strong>已归档</strong></span>
+                </div>
             </div>
         </div>
     </div>
@@ -268,18 +340,36 @@
                     </div>
                 </div>
             </div>
-            <div class="detail-visual">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">Infrastructure Guard</span>
+            <div class="detail-visual dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-title">结构健康巡检台</div>
+                    <div class="dashboard-status"><span class="status-dot live"></span>监测稳定</div>
                 </div>
-                <span class="prompt">&gt; inspect(bridge_a, structural_health)</span>
-                <div class="output">cracks_detected: 3 (minor)<br>deflection: within_limits<br>drainage: 1 blockage<br>report: sent_to_engineering</div>
-                <span class="prompt">&gt; bridge.priority(rank)</span>
-                <div class="output">maintenance_priority: low<br>next_scan: 30_days<br>historical_trend: stable</div>
-                <span class="prompt">&gt; <span class="cursor">▌</span></span>
+                <div class="dashboard-body">
+                    <div class="dashboard-main">
+                        <div class="camera-view">
+                            <div class="bbox bbox-equipment" data-label="桥梁主体" style="top:28%;left:12%;width:180px;height:55px"></div>
+                            <div class="bbox bbox-anomaly" data-label="裂缝 x3" style="top:55%;left:60%;width:70px;height:50px"></div>
+                            <div class="camera-label">桥梁 A - 巡检 Robot 05</div>
+                        </div>
+                    </div>
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-title">监测指标</div>
+                        <div class="detection-list">
+                            <div class="detection-item"><span class="detection-tag">裂缝</span><span class="detection-confidence">3 处轻微</span></div>
+                            <div class="detection-item"><span class="detection-tag">挠度</span><span class="detection-confidence">正常</span></div>
+                            <div class="detection-item"><span class="detection-tag">排水</span><span class="detection-confidence">1 处堵塞</span></div>
+                        </div>
+                        <div class="dashboard-alert">
+                            <strong>工程报告</strong>
+                            <span>报告已自动发送至工程部，维护优先级：低。</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-footer">
+                    <span>维护优先级 <strong>低</strong></span>
+                    <span>下次检测 <strong>30 天</strong></span>
+                </div>
             </div>
         </div>
     </div>
@@ -344,8 +434,8 @@
 <div class="back-to-top">&uarr;</div>
 
 <script src="js/config.js"></script>
-<script src="js/i18n.js?v=4"></script>
-<script src="js/spacex.js?v=2"></script>
+<script src="js/i18n.js?v=5"></script>
+<script src="js/spacex.js?v=5"></script>
 <script>
 (function(){
     var API_BASE = (window.API_BASE || 'http://localhost:5000').replace(/\/$/, '');
