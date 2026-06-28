@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="关于星瀚空间 STELLARA — 面向工业与商业航天的自主智能巡检平台">
     <title data-i18n="page.about.title">关于 — 星瀚空间 STELLARA</title>
-    <link rel="stylesheet" href="css/spacex.css?v=7">
+    <link rel="stylesheet" href="css/spacex.css?v=8">
 </head>
 <body>
 
@@ -163,6 +163,66 @@
     </div>
 </section>
 
+<section class="section partner-section" id="partner">
+    <div class="container">
+        <div class="partner-grid fade-in">
+            <div class="partner-content">
+                <span class="section-label" data-i18n="about.partner.label">合作</span>
+                <h2 data-i18n="about.partner.heading">成为合作伙伴或供应商</h2>
+                <p data-i18n="about.partner.desc">如果您希望与 STELLARA 建立战略合作、成为授权代理商，或提供传感器、机器人本体、计算平台等供应链支持，欢迎留下您的信息，我们将在 2 个工作日内与您取得联系。</p>
+                <div class="partner-benefits">
+                    <div class="partner-benefit">
+                        <span class="partner-benefit-dot"></span>
+                        <span data-i18n="about.partner.b1">渠道与市场合作</span>
+                    </div>
+                    <div class="partner-benefit">
+                        <span class="partner-benefit-dot"></span>
+                        <span data-i18n="about.partner.b2">供应链与硬件集成</span>
+                    </div>
+                    <div class="partner-benefit">
+                        <span class="partner-benefit-dot"></span>
+                        <span data-i18n="about.partner.b3">技术方案联合开发</span>
+                    </div>
+                </div>
+            </div>
+            <div class="partner-form-wrap">
+                <form id="partner-form">
+                    <div class="form-group">
+                        <label data-i18n="about.partner.company">公司名称</label>
+                        <input type="text" name="company" required data-i18n-placeholder="about.partner.company.ph" placeholder="您的公司名称">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label data-i18n="about.partner.name">联系人</label>
+                            <input type="text" name="name" required data-i18n-placeholder="about.partner.name.ph" placeholder="您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label data-i18n="about.partner.email">联系邮箱</label>
+                            <input type="email" name="email" required data-i18n-placeholder="about.partner.email.ph" placeholder="your@email.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="about.partner.type">合作类型</label>
+                        <select name="type" required>
+                            <option value="" data-i18n="about.partner.type.ph">请选择合作类型</option>
+                            <option value="partner" data-i18n="about.partner.type.partner">合作伙伴 / 渠道代理</option>
+                            <option value="supplier" data-i18n="about.partner.type.supplier">供应商 / 硬件集成</option>
+                            <option value="tech" data-i18n="about.partner.type.tech">技术联合开发</option>
+                            <option value="other" data-i18n="about.partner.type.other">其他合作</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="about.partner.msg">合作描述</label>
+                        <textarea name="message" required data-i18n-placeholder="about.partner.msg.ph" placeholder="请简要描述合作意向或供应能力……"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary" data-i18n="about.partner.submit">提交合作申请</button>
+                    <div class="form-message" id="partner-form-message"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="about-v2-connect" id="contact">
     <div class="container">
         <div class="about-v2-connect-head fade-in">
@@ -224,10 +284,36 @@
 <div class="back-to-top">&uarr;</div>
 
 <script src="js/config.js"></script>
-<script src="js/i18n.js?v=6"></script>
-<script src="js/spacex.js?v=5"></script>
+<script src="js/i18n.js?v=8"></script>
+<script src="js/spacex.js?v=6"></script>
 <script>
 (function(){
+    var API_BASE = (window.API_BASE || 'http://localhost:5000').replace(/\/$/, '');
+
+    var partnerForm = document.getElementById('partner-form');
+    if(partnerForm){
+        partnerForm.addEventListener('submit', async function(e){
+            e.preventDefault();
+            var data = Object.fromEntries(new FormData(this).entries());
+            data.source = 'partner';
+            var msg = document.getElementById('partner-form-message');
+            try {
+                var res = await fetch(API_BASE + '/api/contact', {
+                    method:'POST',
+                    headers:{'Content-Type':'application/json'},
+                    body:JSON.stringify(data)
+                });
+                var result = await res.json();
+                msg.textContent = result.message;
+                msg.className = 'form-message ' + (result.success ? 'success' : 'error');
+                if(result.success) this.reset();
+            } catch(err){
+                msg.textContent = '提交失败，请稍后重试';
+                msg.className = 'form-message error';
+            }
+        });
+    }
+
     function initTaglineCarousel(){
         var carousel = document.getElementById('tagline-carousel');
         if(!carousel) return;
